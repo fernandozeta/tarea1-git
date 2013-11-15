@@ -10,7 +10,7 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
 * { font-family: 'Open Sans', sans-serif; font-size: 14px; color: #333; line-height: 1.6em }
 h1, h2, h3, h4 { font-family: 'Ubuntu' sans-serif }
 header { background: #8156A3; color: white; text-align: center }
-h1 { height: 180px; background: url('logo.jpeg') top center no-repeat; text-indent: -999em }
+h1 { height: 180px; background: url('images/logo.jpeg') top center no-repeat; text-indent: -999em }
 h2 { color: white; text-transform: uppercase; font-size: 36px; padding: 10px 0 20px }
 a { color: #2518b5 }
 ol { list-style-type: decimal; padding: 30px }

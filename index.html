@@ -1,227 +1,98 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="content-type" content="text/html;">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="robots" content="index, follow">
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="" />
-    <meta name="author" content="talPor Solutions" />
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640" />
 
-    <title>DevLabs USB - Tarea 1</title>
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
 
-    <link href="//fonts.googleapis.com/css?family=Ubuntu|Open+Sans" rel="stylesheet" type="text/css">
-    <link type="text/css" rel="stylesheet" media="all" href="screen.css" />
-  </head>
-  <body>
-    <a id="github-ribbon" href="https://github.com/devlabs-usb/tarea1-git"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub"></a>
-
-    <header>
-      <h1>DevLabs__UCB/UCAB</h1>
-      <h2>Tarea 1</h2>
-    </header>
-
-    <section id="explanation">
-      <div>
-        <p>
-          Esta primera tarea consiste en familiarizarse un poco con
-          herramientas que deben ser comunes para el desarrollo de
-          cualquier proyecto. En las siguientes instrucciones
-          posiblemente hayan algunos términos desconocidos si nunca
-          has trabajado con Git; queda de tu parte investigar lo
-          que significan para poder realizar la actividad.
-        </p>
-
-        <p>
-          Como parte práctica de esta tarea, tendrás que seguir los
-          siguientes pasos:
-        </p>
-
-        <ol start="0">
-          <li>Crear una cuenta en <a href="https://github.com" target="blank">github</a>.</li>
-          <li>
-            Realizar un fork en github de este repo:
-            <a target="blank" href="https://github.com/devlabs-usb/tarea1-git">http://github/devlabs-usb/tarea-1</a>.
-          </li>
-          <li>
-            Clonar tu propio fork usando <code>git clone</code>.
-          </li>
-          <li>
-            Hacer merge del branch <code>conflict-branch</code> que existirá
-            en tu repositorio a tu branch <code>gh-pages</code> (ver
-            <code>git help checkout</code> y <code>git help merge</code>).
-          </li>
-          <li>Resolver los "merge conflicts" que surgirán al hacer el merge.</li>
-          <li>
-            En tu propio repositorio, rellena tu archivo "index.html" con las
-            respuestas a las preguntas teóricas que se encuentran acá.
-          </li>
-          <li>
-            Hacer <code>push</code> de los cambios a "index.html" a tu
-            repositorio cuando termines de rellenar las respuestas.
-          </li>
-          <li>
-            Enviarnos un correo
-            a <a href="mailto:devlabs-usb@talpor.com">devlabs-usb@talpor.com</a>
-            con el URL de tu repositorio en GitHub, tu nombre y
-            carnet. <strong>Bonus:</strong> Si entiendes como
-            funcionan
-            los <a href="https://help.github.com/categories/20/articles"
-            target="blank">git pages</a>, mándanos el link a tu página
-            de respuestas.
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <!--DEVLABS--USB VERSION 1.01-->
-
-    <section id="questions">
-      <article>
-        <h3>Preguntas</h3>
-      </article>
-      <article id="q1">
-        <h3>
-          1. Colocar acá el hash del commit en el que resolviste el merge
-          conflict causado por el paso 4.
-        </h3>
-        <div class="answer">
-          Colocar acá el hash. Nota: El hash sería algo como: 8a000d3d2ec8b5f8b2286ad279c54b430fc97c67<br />
-          o mejor aún, podrían apuntarlo directamente a github:
-          <a href="https://github.com/devlabs-usb/tarea1-git/commit/f13d47e22f113120dd587666f9e96bcdf9c7e566" target="blank">8a000d3d2ec8b5f8b2286ad279c54b430fc97c67</a>
-        </div>
-      </article>
-      <article id="q2">
-        <h3>
-          2. Utilizando el diccionario SOWPODS de Scrabble
-          (<a href="http://norvig.com/ngrams/sowpods.txt"
-          target="blank">http://norvig.com/ngrams/sowpods.txt</a>)
-          escriba un programa (en su lenguaje de preferencia) que
-          determine cuáles letras nunca aparecen repetidas de forma
-          consecutiva (AA, BB, CC, etc). Por ejemplo, la letra “D”
-          aparece repetida pues la palabra “ADD” contiene la
-          subsecuencia “DD”.
-        </h3>
-        <div class="answer">
-          Coloca tu respuesta aquí.<br/>
-          Opcionalmente, puedes poner los archivos con la solución
-          en tu repositorio y poner la dirección del archivo acá.
-          Como por ejemplo: /Código/Scrabble.py
-        </div>
-      </article>
-      <article id="q3">
-        <h3>
-          3. En un contexto de la herramienta de control de versiones
-          Git: definir 'working directory', 'index', 'local repo', 'remote
-          repo', 'dirty working tree' y 'merge conflict'.
-        </h3>
-        <div class="answer">
-          Coloca tus respuestas aquí.
-        </div>
-      </article>
-      <article id="q4">
-        <h3>
-          4. Completar la siguiente tabla indicando para cada celda si el
-          comando especificado en la columna lee (R) y/o escribe (W)
-          en la ubicación especificada en la primera fila. Por
-          ejemplo, el comando git commit, lee el indice, construye un
-          commit, lo agrega al repositorio actual y finalmente vacía
-          el indice.
-        </h3>
-        <div class="answer">
-          <table>
-            <thead>
-              <tr>
-                <th></th>
-                <th scope="col"><code>git diff</code></th>
-                <th scope="col"><code>git fetch</code></th>
-                <th scope="col"><code>git add</code></th>
-                <th scope="col"><code>git commit</code></th>
-                <th scope="col"><code>git pull</code></th>
-                <th scope="col"><code>git push</code></th>
-                <th scope="col"><code>git checkout</code></th>
-              </tr>
-            </thead>
-
-            <tbody>
-              <tr>
-                <th scope="row">working dir</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row">index</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>R/W</td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row">local repo</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>W</td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row">remote repo</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </article>
-
-      <article id="q5">
-        <h3>Rellenar la siguiente encuesta</h3>
-        <div class="answer not-technically-an-answer"><a href="https://docs.google.com/forms/d/1CzebM_8YQThM7LjjGou6VxixEalTwXZg_FDoYEHKdes/viewform" target="blank">https://docs.google.com/forms/d/1CzebM_8YQThM7LjjGou6VxixEalTwXZg_FDoYEHKdes/viewform</a>.</div>
-      </article>
-
-      <article id="q6">
-          <h3>Actividad Extra (Bonus Points)</h3>
-          <div class="answer not-technically-an-answer">
-            <p>
-              Sabemos que esta página no es lo más bonito del mundo,
-              ni esta muy bien hecha. Tomaremos en consideración
-              a aquellos que quieran mejorar el diseño de esta página.
-              Pueden hacer uso de todas las tecnologías web que conozcan
-              para hacer algo extra con lo que impresionarnos. La única
-              condición es mantener las mismas preguntas y llenar las
-              respuestas adecuadamente.
-            </p>
-          </div>
-      </article>
-    </section>
-
-    <footer>
-      <p>Contacto: <a href="mailto:devlabs-usb@talpor.com">devlabs-usb@talpor.com</a></p>
-    </footer>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-45571408-1', 'devlabs-usb.github.io');
-      ga('send', 'pageview');
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
     </script>
+    <title>Tarea1-git by fernandozeta</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/fernandozeta/tarea1-git">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Tarea1-git</h1>
+            <h2>Repositorio con el Ejercicio de Git de la Tarea 1</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/fernandozeta/tarea1-git/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/fernandozeta/tarea1-git/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h3>
+<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+
+<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+
+<pre><code>$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages
+</code></pre>
+
+<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+
+<h3>
+<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+
+<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+
+<h3>
+<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+
+<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+
+<h3>
+<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+
+<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+
+<h3>
+<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/fernandozeta">fernandozeta</a> can be found on <a href="https://github.com/fernandozeta/tarea1-git">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
   </body>
 </html>

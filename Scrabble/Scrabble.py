@@ -5,6 +5,8 @@
 #	Autor: Fernando Zerpa
 #	Fecha: 14/11/2013
 #
+#	Corrida: python Scrabble.py sowpods.txt
+#
 import sys
 
 #lista de palabras a buscar en el diccionario
